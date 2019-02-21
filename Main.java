@@ -1,4 +1,4 @@
-package gadi_mmn15_mavo;
+
 
 public class Main {
 	public static void main(String[]args) {
