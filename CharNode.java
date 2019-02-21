@@ -6,8 +6,6 @@
  * 
  */
 
-package gadi_mmn15_mavo;
-
 public class CharNode {
 	private char _data; // current char
 	private int _value; // Count how many times this char appears in String
