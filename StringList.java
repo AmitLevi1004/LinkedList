@@ -1,12 +1,15 @@
-package interview;
+package gadi_mmn15_mavo;
 
 /**
- * Class StringList represents a String List.
- * 
+ * Class StringList represents a String List in which each node represents a char and a number of times it appears in a row in a String.
+ * For example:
+ * The String "aabbbacddd" will displayed by a list: [a,2]->[b,3]->[a,1]->[c,1]->[d,3]
+ * The functions in this program are offering String Class Functions implementations of for a String List,
+ * Without using Java class.
  * @author (Amit Levi)
  * @version (2017)
- * 
  */
+
 public class StringList {
 	private CharNode _head;
 
@@ -125,7 +128,7 @@ public class StringList {
 	 * 
 	 */
 	public StringList concat(StringList str) {
-		StringList list1 = new StringList(this);// copy list in order not to change thr original list
+		StringList list1 = new StringList(this);// copy list in order not to change the original list
 		StringList list2 = new StringList(str);
 
 		CharNode p = (list1._head); // pointer of this list
