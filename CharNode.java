@@ -6,7 +6,7 @@
  * 
  */
 
-package interview;
+package gadi_mmn15_mavo;
 
 public class CharNode {
 	private char _data; // current char
