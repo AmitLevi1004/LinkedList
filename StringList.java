@@ -3,10 +3,7 @@
  * Class StringList represents a String List in which each node represents a
  * char and a number of times it appears in a row in a String. For example: The
  * String "aabbbacddd" will displayed by a list:
- * [a,2]->[b,3]->[a,1]->[c,1]->[d,3] The functions in this program are offering
- * String Class Functions implementations of for a String List, Without using
- * Java class.
- * 
+ * [a,2]->[b,3]->[a,1]->[c,1]->[d,3] 
  * @author (Amit Levi)
  * @version (2017)
  */
