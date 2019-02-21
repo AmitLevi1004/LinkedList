@@ -1,11 +1,12 @@
-package gadi_mmn15_mavo;
 
 /**
- * Class StringList represents a String List in which each node represents a char and a number of times it appears in a row in a String.
- * For example:
- * The String "aabbbacddd" will displayed by a list: [a,2]->[b,3]->[a,1]->[c,1]->[d,3]
- * The functions in this program are offering String Class Functions implementations of for a String List,
- * Without using Java class.
+ * Class StringList represents a String List in which each node represents a
+ * char and a number of times it appears in a row in a String. For example: The
+ * String "aabbbacddd" will displayed by a list:
+ * [a,2]->[b,3]->[a,1]->[c,1]->[d,3] The functions in this program are offering
+ * String Class Functions implementations of for a String List, Without using
+ * Java class.
+ * 
  * @author (Amit Levi)
  * @version (2017)
  */
@@ -92,17 +93,14 @@ public class StringList {
 		}
 	}
 
-	
 	// methods
 	/**
-	 * Method gets a number of
-	 * index in string and returns the char in this index.
+	 * Method gets a number of index in string and returns the char in this index.
 	 * 
 	 * @param i = the number of the index in string
 	 * @return the char that appears in index i
 	 */
-	public char charAt(int i)
-	{
+	public char charAt(int i) {
 		int counter = -1; // because string start from 0
 		CharNode ptr = _head;// pointer
 		char c = ' ';
@@ -120,8 +118,8 @@ public class StringList {
 	}
 
 	/**
-	 * Method is returning a new list
-	 * which made of this. list and str list that the method gets.
+	 * Method is returning a new list which made of this. list and str list that the
+	 * method gets.
 	 * 
 	 * @param str the other list the method in adding to this. list
 	 * @return the new list which include the two lists
@@ -163,9 +161,8 @@ public class StringList {
 	}
 
 	/**
-	 * Method is getting a number of
-	 * index and ASCII code of a char and checks the first index in string that this
-	 * char is appears from this index number.
+	 * Method is getting a number of index and ASCII code of a char and checks the
+	 * first index in string that this char is appears from this index number.
 	 * 
 	 * @param ch        the char
 	 * @param fromIndex the number of the index that methods start to search from
@@ -199,8 +196,7 @@ public class StringList {
 	}
 
 	/**
-	 * Methods checks if this list
-	 * and other list are equal.
+	 * Methods checks if this list and other list are equal.
 	 * 
 	 * @param str the other list
 	 * @return true if they are equal
@@ -215,8 +211,7 @@ public class StringList {
 	}
 
 	/**
-	 * Time complexity = O(n) Space complexity = O(n) This is a private rec equal
-	 * method
+	 * This is a private rec equal method
 	 */
 	private boolean equals(CharNode ptr1, CharNode ptr2) {
 		if (ptr1 == null && ptr2 == null)// if the rec is done or they are both null
@@ -232,10 +227,9 @@ public class StringList {
 	}
 
 	/**
-	 * Time complexity = O(n) Space complexity = O(1) Methods checks which string is
-	 * bigger than the other lexicography. If they both equal, 0 will return. If
-	 * this string is smaller then other string , -1 will returned. If this string
-	 * is bigger then other string , 1 will returned.
+	 * Methods checks which string is bigger than the other lexicography. If they
+	 * both equal, 0 will return. If this string is smaller then other string , -1
+	 * will returned. If this string is bigger then other string , 1 will returned.
 	 * 
 	 * @param str the other string
 	 * @return -1 If this string is smaller then other string
@@ -278,7 +272,8 @@ public class StringList {
 	}
 
 	/**
-	 * Method is 'cutting' the string until int i index, the new edited list is return.
+	 * Method is 'cutting' the string until int i index, the new edited list is
+	 * return.
 	 * 
 	 * @param i the number of the index that the new list will start from
 	 * @return the new list
@@ -299,9 +294,8 @@ public class StringList {
 	}
 
 	/**
-	 * Method gets int i and int j
-	 * and return new StringList based on this StringList, that is cut until
-	 * index i and from index j.
+	 * Method gets int i and int j and return new StringList based on this
+	 * StringList, that is cut until index i and from index j.
 	 * 
 	 * @param i the index that the new list will start from.
 	 * @param j the index that the new list will end at.
