@@ -3,7 +3,7 @@
  * Class StringList represents a String List in which each node represents a
  * char and a number of times it appears in a row in a String. For example: The
  * String "aabbbacddd" will displayed by a list:
- * [a,2]->[b,3]->[a,1]->[c,1]->[d,3] 
+ * [a,2]->[b,3]->[a,1]->[c,1]->[d,3]
  * @author (Amit Levi)
  * @version (2017)
  */
@@ -21,7 +21,7 @@ public class StringList {
 			_head = null;
 		} else {
 			_head = new CharNode(node.getData(), node.getValue(), null); // set _head to point the first node in list
-			for (CharNode ptr = node.getNext(), last = _head; ptr != null; ptr = ptr.getNext()) // create new nodes for
+			for (CharNode ptr = node.getNext(), last = _head; ptr != null; ptr = ptr.getNext()) // create new nodes
 																								// each char in list
 			{
 				last.setNext(new CharNode(ptr.getData(), ptr.getValue(), ptr.getNext()));
@@ -33,7 +33,6 @@ public class StringList {
 
 	/**
 	 * Constructor builds a list of chars based on the string it gets.
-	 * 
 	 * @param s the string that the constructor gets in order to build the list
 	 */
 	public StringList(String s) {
@@ -90,10 +89,8 @@ public class StringList {
 		}
 	}
 
-	// methods
 	/**
 	 * Method gets a number of index in string and returns the char in this index.
-	 * 
 	 * @param i = the number of the index in string
 	 * @return the char that appears in index i
 	 */
@@ -117,7 +114,6 @@ public class StringList {
 	/**
 	 * Method is returning a new list which made of this. list and str list that the
 	 * method gets.
-	 * 
 	 * @param str the other list the method in adding to this. list
 	 * @return the new list which include the two lists
 	 * 
@@ -138,7 +134,6 @@ public class StringList {
 	/**
 	 * Time complexity = O(n) Space complexity = O(1) Method is getting a ASCII code
 	 * of a char and checks the first index in string that this char is appears.
-	 * 
 	 * @param ch the ASCII code of a char that needs to be found
 	 * @return the number of first index that this char is appears
 	 * @return -1 if char is not found in list
@@ -161,7 +156,7 @@ public class StringList {
 	 * Method is getting a number of index and ASCII code of a char and checks the
 	 * first index in string that this char is appears from this index number.
 	 * 
-	 * @param ch        the char
+	 * @param ch the char
 	 * @param fromIndex the number of the index that methods start to search from
 	 * @return the number of the first index the char is at from fromIndex
 	 * @return -1 if char is not found in list
