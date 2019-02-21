@@ -1,6 +1,6 @@
 
 /**
- * Class CharNode represents a Char Node in a limked list. 
+ * Class CharNode represents a Char Node in linked list. 
  * @author (Amit Levi)
  * @version (2017)
  * 
