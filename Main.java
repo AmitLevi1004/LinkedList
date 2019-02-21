@@ -1,5 +1,8 @@
 
 
+/* This program is offering String Class Functions implementations for a String List, Without using
+ * Java classes.
+ */
 public class Main {
 	public static void main(String[]args) {
 		StringList s1 = new StringList("aabbbacddd");
